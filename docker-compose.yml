@@ -8,9 +8,7 @@ version: "3"
 services:
 
   invidious:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile
+    image: quay.io/invidious/invidious
     restart: unless-stopped
     environment:
       INVIDIOUS_CONFIG: |
