@@ -15,7 +15,7 @@ services:
         check_tables: true
         hmac_key: ${HMAC_KEY}
         domain: ${DOMAIN}
-        https_only: true
+        https_only: false
         hsts: true
         external_port: ${EXTERNAL_PORT:-443}
         use_pubsub_feeds: true
@@ -51,7 +51,8 @@ services:
           captions: ["English", "", ""]
           annotations: false
           annotations_subscribed: false
-          autoplay: false
+          preload: true
+          autoplay: true
           continue: true
           continue_autoplay: true
           listen: false
