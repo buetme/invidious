@@ -18,9 +18,9 @@ services:
         https_only: false
         hsts: true
         external_port: ${EXTERNAL_PORT:-443}
-        use_pubsub_feeds: true
+        use_pubsub_feeds: false
         use_innertube_for_captions: true
-        statistics_enabled: true
+        statistics_enabled: false
         pool_size: 200
         registration_enabled: ${REGISTRATION_ENABLED:-true}
         login_enabled: ${LOGIN_ENABLED:-true}
